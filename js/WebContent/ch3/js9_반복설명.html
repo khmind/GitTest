@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 
+	aa:for(let n=1; i<10; 1++){
+		for(){
+			1
+			2
+			if(){
+				break aa;
+				(or continue;
+			}
+			4
+			5
+		}
+		6
+	}
+	
+	for(String strObj: strObjArr){
+		for(String s: strObj){
+		
+		}
+	}
+	for(let n in obj){}
+	for(let n of obj){}
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	let person={
+			
+		first_name: "홍",
+		last_name: "길동",
+		age: 25
+	}
+	
+	for(const key in person){
+		document.write("<h3>"+ key + ":" + person[key] + "</h3>")
+	}
+	
+	let brands = ["삼성", "엘지", "팬택", "애플", "구글", "아마존" ];
+	
+	for(const brand in brands){
+		document.write("<span>" + brands[brand] + " </span> [ for in ]<br>");
+	}
+	
+	document.write("--------------------<br>");
+			
+	for(const brand of brands){
+		document.write("<span>" + brand + " </span>   [ for of ]<br>");
+	}
+	
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

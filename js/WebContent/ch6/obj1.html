@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- 
+	자바스크립트 객체 생성법
+		1. new Object()
+		2. 리터럴표기법 (JSON과 유사)
+		3. 프로토타입
+	.객체기반언어이므로 객체, 메소드(함수), 이벤트의 개념에 대해 잘 이해해야한다.
+	.객체 = 속성 + 메소드
+	.자바스크립트의 객체들의 종류
+	
+		1) 사용자 객체
+			1. new Object()
+			2. 리터럴표기법 (JSON과 유사)
+			3. 프로토타입
+		2) 코어객체(기본객체)
+			- Array, Date, String, Math 등
+		3) HTML DOM객체
+			- HTML태그 모두가 객체
+		4) 브라우저객체(BOM)
+			- 브라우저와 관련된 객체들(window, navigator, locaton.screen, history)		
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let person = new Object();
+	person.name = "홍길동";
+	person.nickname  = "X-man";
+	person.age = 24;
+	person.major = "JavaScript";
+	person.speak = function() {
+		
+		document.write("<h3> 난 사람 </h3>");
+	};
+</script>
+</head>
+<body>
+	<h3>Object()를 활용한 객체생성</h3>
+	<hr>
+	<script type="text/javascript">
+	
+		document.write("이름 :" + person.name +"<br>");
+		document.write("나이 :" + person.age +"<br>");
+		document.write("별명 :" + person.nicname +"<br>");
+		document.write("전공 :" + person.major +"<br>");
+		person.speak();
+		
+		
+	</script>
+</body>
+</html>

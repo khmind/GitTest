@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+
+/* 	function changeOn(obj){
+		
+		obj.src = ""
+	} */
+	
+	function changeOn(){		
+		
+		let img = document.getElementById("img");		
+		img.src = "../img/puppy1.jpg";
+		
+/* 		img.innerHTML = `
+			<p> <img src='../img/puppy1.jpg' width='200px' height='200px'></p>
+			`;
+ */		
+	}
+	
+	function changeOff(){
+		
+		let img = document.getElementById("img");
+		img.src = "../img/시바.jpg";
+		
+/* 		img.innerHTML = `
+			<p> <img src='../img/시바.jpg' width='200px' height='200px'></p>
+			`;	
+		 */
+	}
+
+</script>
+
+
+</head>
+<body>
+
+	<h3>자바스크립트로 무엇을 할 수 있나요?</h3>
+	
+	<!-- <button id="b1" onClick="changeOn(this)">사진1</button> -->
+	<button id="b1" onClick="changeOn()">사진1</button>
+	<p id="img"><img src='../img/시바.jpg' width='200px' height='200px'></p>
+	<button id="b2" onClick="changeOff()">사진2</button>
+
+</body>
+</html>

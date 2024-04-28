@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	div{
+		width: 500px; height: 500px;
+		border: 1px solid black;
+		background-color: skyblue;
+		box-shadow: 1px 1px 3px blue;
+		box-sizing: border-box;
+	}
+	p{
+	}
+	
+	a{
+	}
+	a:hover{}
+	
+	
+</style>
+
+<script type="text/javascript">
+	function greet(){	
+		document.write("<h1>환영합니다.</h1>");	
+		/* return "<h1>환영합니다.</h1>";   a 케이스 */
+	}
+</script>
+</head>
+<body>
+
+	<div>
+	
+		<p><script>greet();</script></p>
+		<!-- <p><script>document.write(greet());</script></p>   a 케이스 -->
+		<hr>
+		<p>저희 홈페이지에 오신것을 <script>greet();</script></p>
+		<a onclick="greet()">☞여기를 클릭하세요</a> 		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+
+<!--  연산자
+		- 자바와 같다.
+		. 산술연산자 : + - * / %
+		. 대입연산자 : = += -= .....
+		. 증감연산자 : ++ --		
+		. 비교연산자 : >= > ...
+		. 논리연산자 : && || !
+		. 조건연산자 : 조건식? 참:거짓
+		. 비트연산자 : & | ^
+		
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//산술연산자
+	document.write("------------------")
+	document.write("<h1> 산술연산자 </h1>")
+	document.write("<p> 5 + 3 = ", (5+3) ," </p>")
+	document.write("<p> 5 % 3 = ", (5%3) ," </p>")
+	document.write("------------------")
+	
+	//증감연산자
+	let a = 1;
+	let b = a++;
+	document.write("---증감연산자------")
+	document.write("<p>b=", b, "</p>")
+	document.write("<p>a=", a, "</p>")
+		
+	let c = 1;
+	let d = ++c;
+	document.write("<p>d=", d, "</p>")
+	document.write("<p>c=", c, "</p>")
+	document.write("------------------")
+	
+		
+	//대입연산자
+	let s1, s2, s3, s4;
+	s1=s2=s3=s4=14;
+	
+	s1 += 5;
+	s2 -= 5;
+	s3 *= 5;
+	s4 /= 5;	
+	document.write("---대입연산자------")
+	document.write("<p>s1=", s1, "</p>")
+	document.write("<p>s2=", s2, "</p>")
+	document.write("<p>s3=", s3, "</p>")
+	document.write("<p>s4=", s4, "</p>")
+	document.write("------------------")
+	
+	//비교연산자
+	let x=13; y='7';
+	document.write("---비교연산자------")
+	document.write("<p>x==y : " + (x==y) + "</p>");
+	document.write("<p>x===y : " + (x===y) + "</p>");
+	document.write("------------------")
+	
+	
+	//논리연산자
+	let f = 5;
+	document.write("---논리연산자------")
+	document.write("<p>f>1 && f<5 :" +(f>1 && f<5) + "</p>");
+	
+	/* 
+	//조건연산자
+	get g=3, h=5;
+	document.write("<p>두 수의 차이 :  </p>"+ ( (g>h) ? (g-h): (h-g) )  +" </p>");
+	 */
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

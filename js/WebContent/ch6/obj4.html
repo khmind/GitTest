@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	// meber를 저장하는  member_arr객체배열을 생성한다.
+	// while() 회원을 등록하시겠습니까? ok를하면 
+	// member_name과 member_age을 입력받아 저장하고
+	
+	// memger객체를 리터럴 타입으로 생성한다.
+	// 생성된  member객체를 member_arr에 저장한ㄷ.
+</script>
+
+</head>
+<body>
+	<script type="text/javascript">
+		// 저장된 객체 배열속의  모든 member의 이름과 나이를 출력한다.	
+		
+		let member_arr = new Array();
+		let cnt = 0;
+		let memger;
+		let member_name;
+		let member_age;
+				
+		while( confirm("회원을 등록하시겠습니까?") == true ){
+		
+			member_name = prompt("회원 이름 :");
+			member_age = prompt("회원 나이 :");
+			
+			memger = {
+				"name" : member_name,
+				"age" : member_age			
+			};
+			
+			member_arr.push(memger);
+		}
+		
+	 	document.write("member_arr length : " + member_arr.length);
+	 	
+  	 	for (let i=0; i<member_arr.length; i++){
+	 		document.write("member_arr <br>");
+	 		document.write("member_arr [] : " + member_arr.name[i] +"<br>");	 	
+	 		
+	 		//document.wirte(i + " : " + member_arr[i].name + ", " + member_arr[i].age + "<br>");	 						
+	 		//document.wirte(member_arr[i].name + ", " + member_arr[i].age + "<br>");
+	 	} 
+	
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>HTML DOM 객체 읽기</h3>
+	<hr>
+	<p id="firstP"
+		style = "color:green; background: yellow", onclick="this.style.color='teal'">
+		이것은 <span style="color:red">문장이니다.</span>
+	</p>
+	
+	<script type="text/javascript">
+		let tag = document.getElementById("firstP");
+		
+		let text = tag.id + "\n";
+		text += "tag.tagName="+tag.tagName+"\n";
+		text += "tag.innerHTML=" + tag.innerHTML + "\n";
+		text += "tag.style.color=" + tag.style.color+ "\n";
+		text += "tag.onclick="+ tag.onclick + "\n";
+		text += "tag.childElementCount="+ tag.childElementCount + "\n";
+		text += "tag.너비="+ tag.offsetWidth + "\n";
+		text += "tag.높이="+ tag.offsetHeight + "\n";
+		
+		tag.getElementsByTagName
+		tag.getElementsByClassName(name)
+	
+		
+		alert(text);
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- 
+
+	json(javascript object notation)표기법
+		- 데이터를 저장하거나 전송할때 많이 사용되는 경량의 DATA교환형식이다.
+		- 데이터 포맷일뿐이며 통신방법도 문법도 아닌 단순한 데이터 표현식이다.
+		- 특징
+			. 서버와 클라이언트간의 데이터 전송시 많이 사용
+			. 자바스크립트의 객체표기법(리터럴)과 매우 유사 : '키:값 '쌍으로 구성
+			
+				자바스크립스 객체 <<<<<<<<<<<<<>>>>>>>>>>> JSON
+				객체 parse() <<<<<<<<<<<<<<<
+							>>>>>>>>>>>>>>>>>>> stringify(객체)
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	let person = {
+		name : "홍길동",
+		age : 30, 
+		hobby : [1,2,3,4]			
+	};
+	
+	//자바스크립스객체--->JSON
+	let obj1 = JSON.stringify(person);
+	document.write(obj1);
+	document.write("<br>");
+	
+	
+	//JSON--->자바스크립스객체
+	let obj2 = JSON.parse(obj1);
+	for(let i=0; i<obj2.hobby.length;  i++){
+		document.write(person.hobby[i] + "<br>")
+		
+	}
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

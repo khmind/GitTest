@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- 
+ 	애니메이션
+ 	. 태그용이나 속성값은 시각ㄴ간격으로 계속 변경하세 되면
+ 	웹브라우저 화면에는 애니메이션 효과를 나타낼 수 있다.
+ 	
+ 	- window객체
+ 		.setTimeout() / ClearTimeout() : 단발성
+ 		.setInterval() / ClearTim		:연속성
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width: 250px; height: 250px;
+		background-color: skyblue;
+		text-align: center;
+		border-radius: 50%;
+		display: inline-block;
+	}
+	#t1{
+		margin: 40% auto;
+		background-color: white;
+	}
+	
+</style>
+<script type="text/javascript">
+
+	let inter = 500;
+	function clock(){
+		
+		let obj  = document.getElementById("t1");
+		
+		let now = new Date();
+		let h = now.getHours();
+		let m = now.getMinutes();
+		let s = now.getSeconds();
+		
+		if(h>=12){
+			txt = "PM";
+			h = h-12;
+		}else{			
+			txt = "AM";
+		}
+		
+		obj.innerHTML = txt+" "+h+": " + m +": " + s;		
+		
+	}
+
+</script>
+</head>
+
+
+<body>
+	<h2>디지털시계</h2>
+	<div>
+		<h1 id="t1"></h1>
+	</div>
+
+	<script type="text/javascript">
+	
+		let st = setInterval('clock()', 1000);	
+
+	</script>	
+</body>
+</html>
+
+
+
+
+<!-- <body onload="clock()"> -->
+<!-- <body>
+	<h2>디지털시계</h2>
+	<div>
+		<h1 id="t1"></h1>
+	</div>
+
+	<script type="text/javascript">
+	
+ 		window.setInterval(function() {			
+		}, 1000) 
+		
+		setInterval('clock()', 1000)
+		window.setInterval('clock()', 1000)
+		
+
+	</script>	
+</body>
+</html> -->

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function f() {
+
+		
+/* 		let tag = document.querySelectorAll("section li");
+		
+		let tag = document.querySelectorAll("#a ul ");
+		
+		let tag = document.querySelectorAll("#c ul ");
+		let tag = document.querySelectorAll("#c+ul ");
+		let tag = document.querySelectorAll("#a+h1 ");
+		let tag = document.querySelectorAll("#a~ul ");
+		let tag = document.querySelectorAll("#a>ul");  */
+		
+		let tag = document.querySelectorAll("#a ul ");
+		
+		document.write("--------------------2-- : " +tag.length + "<br>");
+		document.write("--------------------20-- : " +tag[0].tagName + "<br>");
+		for(i=0; i< tag.length; i++){
+			document.write("--------------------22<br>")	
+			document.write("<h4> ddd " + tag[i].tagName.toLowerCase() + " : " + tag[i].id.toLowerCase() + "</h4>" );
+			//document.write("<h4>" + tag1[i].tagName.toLocaleLowerCase() + " : " + tag1[i].id + "</h4>" );
+		}
+		
+	}
+</script>
+</head>
+<body onload="f()">
+<!-- 
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	 -->
+ 
+	<section>
+		<p id="h">
+		<ul id = 'a'>
+			<li id='e'>
+				<ul id='b'>
+					<li id = 'i'></li>		
+					<li id = 'j'></li>
+				</ul>				
+			</li>	
+			<li id='f'></li>	
+			<li id='k'></li>
+			<li id='l'></li>
+		</ul>
+		<h1 id='c'></h1>
+		<ul id='d'></ul>
+		<ul id='de'></ul>
+		</p>
+	</section>
+
+ </body>
+</html>

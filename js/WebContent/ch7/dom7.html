@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	
+	function change(obj, size, color){
+		
+		obj.style.color = color;
+		obj.style.fontSize = size;	
+		
+		//alert(ob);
+		
+	}
+
+
+</script>
+</head>
+<body>
+	
+	<h3>this활용</h3>
+	<hr>
+	<!-- <button id="b1" onClick="change(1)" style="width: 100px; height: 50px">RED</button> -->
+	<button id="b1" onClick="change(this, '30px', 'red')">RED</button>
+	<button id="b2" onClick="change(this, '30px', 'blue')">BLUE</button>
+	<button id="b3" onClick="change(this, '30px', 'orange')">ORANGE</button>
+	<P>인라인 스크립트 방식</P>
+
+</body>
+</html>

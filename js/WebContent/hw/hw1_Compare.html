@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+
+	function comp() {
+		
+ 		let num = prompt("숫자를 입력하세요");
+ 		
+ 		let num1 =  num.substr(0,1);
+ 		let num2 =  num.substr(num.length-1,1);
+ 		
+ 		if ( num1 === num2 ){
+ 			document.write(num + " : 같음 <br>");
+ 		} else {
+ 			document.write(num + " : 다름 <br>");
+ 		}
+	
+	}
+
+</script>
+
+</head>
+<body>
+
+	<h1>첫 글자와 마지막 글자 동일 여부</h1>
+	<hr>
+	<p>
+		<script>comp()</script>
+	</p>	
+
+</body>
+</html>

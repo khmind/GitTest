@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<button type="button" onClick="doSave(event)">저장 </button>
+	
+	<script type="text/javascript">
+	
+		function doSave(e){
+			
+			let obj = e.target;
+			obj.disabled = true;
+			
+			setTimeout( function(e){obj.disabled=false}, 2000 );
+		}
+	</script>
+
+</body>
+</html>

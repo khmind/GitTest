@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!-- 
+
+4. book객체를
+  - Object를 활용하여 생성 출력하고
+  - 리터럴 방식으로 생성하여 출력
+  
+   let a = new Object();
+   a.titel="";
+   a.price="";
+   
+   let a = {
+   		title:"제목"
+   		name:"홍길동" 
+   		price:"2000"   		
+   }
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	let a = new Object();
+	a.titel="";
+	a.price="";
+	
+	let a = {
+			title:"HTML5/CSS3"
+			name:"홍길동" 
+			price:"2000"   		
+	}
+
+</script>
+</head>
+<body>
+
+	<h3>book 객체 만들기</h3>
+	<hr>
+	<p>book: HTML5/CSS3,  홍길동, 2000</p>
+	<script>document.write("<p>book:  " +  a.title + "</p>")</script>
+		
+	<hr>
+	<p>book: HTML5/CSS3,  홍길이, 3000</p> 
+	
+
+</body>
+</html>
+
+
+<!-- 
+
+
+	<h3>book 객체 만들기</h3>
+	<hr>
+	<p>book: HTML5/CSS3,  홍길동, 2000</p>	
+	<hr>
+	<p>book: HTML5/CSS3,  홍길이, 3000</p> 
+	
+	
+	<h3>book 객체 만들기</h3>
+	<hr>
+	<p>가. 홍길동, 2000</p>
+	<p>나. 홍길이, 4000</p>
+	<p>다. 홍길삼, 6000</p>
+	
+	<hr>
+	가격이 가장 비싼 책 :  -->

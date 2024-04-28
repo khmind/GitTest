@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 출력할 모양의 스타일을 지정한다. */
+	span{
+		font-size: 20px; color: blue;		
+	}
+</style>
+
+<script type="text/javascript">
+	// 까지 더해야 할 숫자를 입력받는다.
+	let num1 = parseInt(prompt("숫자를 입력해주세요."));	
+</script>
+</head>
+<body>
+
+	<h3>continue와 break를 이해한다.</h3>
+	<hr>
+	<script type="text/javascript">
+		// 홀수는 더하지 않고, - continue 
+		//입력받은 수에서 5를 뺀수까지만 더해라 - break	
+		
+		let num2 = num1-5;
+		let sum = 0;		
+		
+		document.write("num1 : " + num1 + ", num2 :" + num2);
+		
+ 		for(let i=0; i<=num1; i++){ 		
+ 			
+ 			/* document.write("i : " + i ); */
+ 			document.write("<br>" );
+ 			
+ 			if(i%2===0){
+ 				sum += i;
+ 				document.write("i : " + i );
+ 				continue;
+ 			}
+ 			
+ 			if ( i > ( num1-5) ) {
+ 				break;
+ 			}
+ 			
+ 		}
+ 			
+ 		/* document.write("<br> sum : " + sum ); */
+ 		
+	</script>
+		
+	<hr>
+ 	<div>
+ 		<br>
+		<p> 합계는 
+			<span><script>document.write(sum);</script></span>
+			입니다.
+		</p>
+	</div>
+
+</body>
+</html>

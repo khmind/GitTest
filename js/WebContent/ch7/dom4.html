@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	function changeContent(){
+		
+		//alert("test");
+		
+		let p1 = document.getElementById("p1");
+		p1.innerHTML = `
+			<p>이제부터 자바스크립트의 HTML객체를 다루는 학습 진행</p>
+			<br>
+			<hr>
+			<p> <img src='../img/시바.jpg' width='200px' height='200px'></p>
+			<hr>
+			<p>열심히!!!</p>
+			`;		
+
+		
+		
+	}
+</script>
+</head>
+<body>
+
+	<h3>자바스크립트로 무엇을 할 수 있나요?</h3>
+	<p id="p1">지금까지 자바스크립트는 기본 학습</p>
+	<button type="button" onClick="changeContent()">Next</buttion>
+	
+	
+</body>
+</html>

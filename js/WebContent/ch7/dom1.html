@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!-- 
+
+	.HTML DOM( Document Object Model)
+		: 브라우저는 로딩하면서 페이지의 태그들을 객체화하여 DOM트리를 작성한다.
+	 	- 각 태그의 CSS스타일 시트가 동반되어 구성되고 그 태그 객체를 이용하여 style을 동적 제어 한다.
+	 	
+	 .DOM객체들 관계 properties
+	 	. 부모객체: parentElement
+	 	. 직계자식 객체들의 컬렉션 : children
+	 	. 첫 번째 직계자식 : firstElementChild
+	 	. 마지막 직계자식 : lastElementChild
+	 	. 왼쪽 사촌 : previousElementSibling
+	 	. 오른쪽 사촌 : nextElementSibling
+	 	==> 이런 관계 프로퍼티를 이용해서 객체에 접근할 수 있다.
+	 	
+	 .HTML DOM객체
+	 	id
+	 	lang
+	 	title
+	 	tagName
+	 	innerHTML
+	 	style		-> 객체
+	 	----------------------
+	 	childElementCount
+	 	firstElementChild
+	 	lastElementchild
+	 	nextElementSibling	오른쪽에 있는 객체 형제
+	 	previousElementSibling 왼쪽에 있는 객체 형제
+	 	parentElement
+	 	----------------
+	 	offsetHeight
+	 	offsetWidth
+	 	offsetLeft
+	 	offsetTop
+	 	----------------
+	 	children
+	 	----------------
+	 	addEventListener() 이벤트리스너 등록
+	 	removeEventListener() 이벤트리스너 제거
+	 	appendChild() 	마지감에 추가
+	 	setAttribute() 	속성추가
+	 	getAttribute() 
+	 	insertBefore() 	지정된 위치앞에 자식 추가
+	 	removeChild() 	자식 삭제
+	 	replaceChild()	자식 대체
+	 	clik()
+	 	focus()
+	 	
+	
+	 	
+	 
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<p>문장입니다.</p>
+	<p>테스트</p>
+	<from>		
+		<input type="text">
+		<input type="button" value="테스트">
+	</from>
+
+</body>
+</html>

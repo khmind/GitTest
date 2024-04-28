@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	function Student(n, d, grade){
+		
+		name = n; //전역번수
+		dept = d; //전역번수
+		
+		this.grade = grade; // 프로퍼티
+		this.print = print; //메소드
+		
+	}
+	
+	function print(){
+		
+		/* document.write(name+"은 " + dept+ "과 이고 " + this.grade + "학년  <br>"); */
+		document.write("test");
+	}
+	
+</script>
+</head>
+<body>
+
+	<script type="text/javascript">
+	
+		const let s1 = new Student("홍길동", "컴공", 2);
+		const let s2 = new Student("홍길2", "건축", 3);
+		const let s3 = new Student("홍길3", "기계", 4);
+	
+		s1.print();
+		
+	</script>
+
+</body>
+</html>

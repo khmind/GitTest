@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- 
+	배열의 함수 map(), filter()
+	. map():배열의 원소를 함수에 하나씩 대입해서 새로운 배열을 생성한다.
+	. filter(): 배열의 원소를 함수에 하나씩 대입해서 참인 원소만 새로운 배열로 생성
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	let data = [1,2,3,4,5];
+	
+	function func(value){		
+		return value*value;		
+	}
+	
+	//map()적용
+	let mapArr = data.map(func);
+	document.write(mapArr);
+	
+	function func2(value){
+		return value>3;
+	}
+	
+	//filer()적용
+	let filterArr = data.filter(func2);
+	document.write("<br>"+filterArr);
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	table{
+		border: 1px;
+		width: 650px;
+		align: left;
+	}
+	th{
+		background: blue;
+		color: white;
+		width: 150px;
+	}
+	td{
+		text-align: center;
+	}
+	p{		
+		width: 650px;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+
+	<h3>이차원 배열</h3>
+	<hr>
+	
+	<p>성적테이블</p> 
+	
+ 	<table border="1px" align="left">
+		<tr>
+			<th>이름</th>
+			<th>전공</th>
+			<th>중간</th>
+			<th>기말</th>
+		</tr>	
+	
+		<script type="text/javascript">
+	 		let studentArr = new Array(['강민성', '컴공' , 88, 76],
+									['김정아', '수학' , 70, 83],
+									['신은수', '행정' , 92, 95],
+									['이은주', '물리' , 85, 92],
+									['조우진', '건축' , 97, 88],
+									);
+			
+			let students = new Array( new Array('강민성', '컴공' , 88, 76),
+										new Array('김정아', '수학' , 70, 83),
+										new Array('신은수', '행정' , 92, 95),
+										new Array('이은주', '물리' , 85, 92),
+										new Array('조우진', '건축' , 97, 88)
+									);
+			
+ 	   		for (let i=0; i<students.length; i++) {
+	 	
+	 			document.write("<tr>");
+	 			
+	 			for (let j=0; j<students[i].length; j++) {	 			
+	 				document.write("	<td>" + students[i][j] +"</td>");
+	 			}
+	 			document.write("<tr>");
+	 			
+	 		}  
+		
+		</script>
+
+	</table>	 
+	
+	
+
+</body>
+</html>

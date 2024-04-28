@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<script type="text/javascript">
+	
+	function deleteW1(){
+		
+		let deleteTag = document.getElementById("W1");
+		//deleteTag.remove();
+		
+		 deleteTag.parentNode.removeChild(deleteTag);
+	}
+	
+	function replaceW2(){
+		let newTag = document.createElement("img");
+		newTag.setAttribute("src", "../img/elsa.png");
+		newTag.setAttribute("width", "60px");
+		newTag.setAttribute("heigth", "60px");
+		
+		
+		let oldTag = document.getElementById("W2");
+		let parent = oldTag.parentNode ;
+		parent.replaceChild(newTag, oldTag);
+	}
+
+</script>
+
+
+
+</head>
+<body>
+
+	<h3>이미지 대체와 삭제	</h3>
+	<hr>
+	<div>
+		<img src="../img/f1.jpg" width="60px" height="60px">
+		<img src="../img/f2.jpg" width="60px" height="60px" id="W1">
+		<img src="../img/시바.jpg" width="60px" height="60px">
+		<img src="../img/f1.jpg" width="60px" height="60px" id="W2">
+		<img src="../img/f2.jpg" width="60px" height="60px">
+		<img src="../img/시바.jpg" width="60px" height="60px">		
+	</div>
+	<hr>
+	<button type="button" onClick="deleteW1()"	 > 두 번째 이미지 삭제</button>
+	<button type="button" onClick="replaceW2()"	 > 네 번째 이미지 변경</button>
+</body>
+</html>

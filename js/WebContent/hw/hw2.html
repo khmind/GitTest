@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+
+2. 난수 발생을 활용하여
+  - 1~46사이의 6개의 로또번호를 배열에 저장하여 출력하고
+  - 최대값을 구하고
+  - 배열을 반대로 정렬하여 출력한다.
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	body{
+		background: #D5D5D5;
+	}
+	h3 {color: blue;}
+	#l1, #l3{color: red;}
+	#l2{color: green;}
+	
+
+</style>
+<script type="text/javascript">
+
+	let max = 0;	
+	let arr = new Array(6);
+	
+	function rd(){
+		
+		for(i=0; i<6; i++){			
+			arr[i] = (Math.floor(Math.random()*46)+1);
+		}
+		
+ 		document.write(arr[0] + " " + arr[1] + " " + arr[2] + " " + arr[3] 
+						+ " " + arr[4] + " "+ arr[5] );
+ 		
+ 		for(i=0; i<6; i++){ 			
+ 		
+			if ( arr[i] > max ) {
+				max = arr[i];				
+			}
+ 		}	
+		
+ 		//arr.reverse()
+	}
+	
+	function fMax(){
+		document.write(max);
+	}
+	
+	function rev(){
+		/* document.write(arr + "<br>"); */
+		 document.write(arr.reverse());
+	}	
+	
+
+</script>
+
+</head>
+<body>
+
+	<h3>이번주 로또번호는</h3>
+	<hr>
+	<p id="l1"><script>rd();</script></p>
+	<hr>
+	<p id="l2">최대값: <script>fMax()</script></p>
+	<hr>
+	<p id="l3">반대로 출력 : <script>rev()</script></p>
+
+</body>
+</html>

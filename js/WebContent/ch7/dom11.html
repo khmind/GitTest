@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function f() {
+		
+		let tag = document.querySelector('ul#a');
+		document.write("<h4>" + tag.tagName.toLocaleLowerCase() +" : " + tag.id + "</h4>");
+		document.write("--------------------1<br>")		
+		
+		/*
+		//selecton에 있는 모든 li를 가져와 태그명과 id를 출력
+		// var matches = document.querySelectorAll("div.note, div.alert");
+ 		let tag1 = document.querySelectorAll("ul>li");
+		document.write("--------------------2<br>")		
+		document.write("--------------------len : " + tag1.length);
+		
+		for(i=0; i< tag1.length; i++){
+			document.write("--------------------3 <br>")
+			
+			//document.write("<h4>" + tag1[i].tagName.toLocaleLowerCase() + " : " + tag1[i].id + "</h4>" );
+		}
+		*/
+		
+		let tag2 = document.querySelectorAll('li');
+		document.write("--------------------2-1<br>")	
+		document.write("--------------------2-2 : " + tag2.length + "<br>");
+		
+		
+/* 
+		let cnt = 1;
+		const eleList = document.querySelectorAll('p');
+		document.write("----------------eleList len : "+ eleList.length + "<br>")
+		for( elist  of eleList ) {
+			document.write("테스트");
+		}		
+		 */
+		
+		//id가 a인 요소의 자손 ul들 출력	
+		
+/* 		
+		var divList = document.querySelectorAll("div");
+		console.log("[div 태그 포함한 전체 자식 정보 확인]");
+		console.log(divList); //divList[0] 방식으로 접근
+ */
+
+
+		
+		// id가 c인 요소의 바로 인접한 ul출력
+		// id가 a인 바로 인접한 h1출력
+		// id a에 인접한 것들(형제) 출력
+	}
+</script>
+</head>
+<body onload="f()">
+<!-- 
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	 -->
+ 
+	<section>
+		<p id="h">
+		<ul id = 'a'>
+			<li id='e'>
+				<ul id='b'>
+					<li id = 'i'></li>		
+					<li id = 'j'></li>
+				</ul>				
+			</li>	
+			<li id='f'></li>	
+			<li id='k'></li>
+			<li id='l'></li>
+		</ul>
+		<h1 id='c'></h1>
+		<ul id='d'></ul>
+		<ul id='de'></ul>
+		</p>
+	</section>
+
+ </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- 
+	script 태그 활용 코드 구현	
+		.header
+		.body
+		.외부 .js파일로 작성 가능
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function over(obj){		
+		obj.src="../img/puppy2.jpg";
+	}
+	function out(obj){		
+		obj.src="../img/puppy1.jpg";
+	}	
+</script>
+
+</head>
+<body>
+	<h3>마우스를 올려보세요	</h3>
+	<hr>
+	<script type="text/javascript">	
+		document.write("<h3>body속 필요한 위치에 작성</h3>");
+	</script>
+	<img src="../img/puppy1.jpg" onmouseover="over(this)" onmouseout="out(this)" alt"">
+	
+</body>
+</html>

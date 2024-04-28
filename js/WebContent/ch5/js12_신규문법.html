@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- 
+	1. 화살표함수
+		.function f(){} : 함수정의
+		.let f = function(){}  <---- f()로 부름 : 함수표현식
+		
+		.함수표현식
+			const h = (매개변수, ,)=> {
+				retrun 값;
+			}
+			
+			- 매개변수가 하나일때()생략가능
+			const h = 매개변수 => { return 값; }
+			
+			- 함수안에 실행문이 return문 하나일 경우 return과 {}생략가능하다.
+			const h = 매개변수 => 값;
+
+
+	2. Template문자열
+		`문자열~~~${변수나 수식}`
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	//1. 함수 선언식
+	function hello(name){
+		return "Hello"+name;		
+	}
+	
+	//2. 함식 표현식
+	const hello2 = function (name){
+		return "Hello"+name;
+	}
+
+	//3. 화살표 함수1 - 일반(기준)
+	const hello2 = (name) => {
+		return "Hello"+name;
+	}	
+	
+	//4. 화살표 함수2 - 매개변수1개
+	const hello3 = name => {
+		return "Hello"+name;
+	}	
+	
+	//5. 화살표 함수3 - 함수내 실행문이 return문 하나일때
+	const hello3 = name => "Hello"+name;
+	
+	//6. 템플릿문자열 함수
+	function hello(name){
+		return `안녕하세요${name}님 반갑습니다.`;
+	}	
+
+	
+	
+</script>
+
+<style type="text/css">
+	span{font-size: 20px; color: bule;}
+
+</style>
+</head>
+<body>
+
+	<h3>화살표 함수 학습</h3>
+	<hr>
+	함수 선언식 : <span id = "a"></span><br>
+	함수 표현식 : <span id = "b"></span><br>
+	화살표함수1 : <span id = "c"></span><br>
+	화살표함수2 : <span id = "d"></span><br>
+	화살표함수3 : <span id = "ea"></span><br>
+	
+	<h3 id="greeting"></h3>
+	
+	<script type="text/javascript">
+		
+		//화살표함수
+		let name = prompt("이름을 입력하세요");
+		const spans = document.getElementsByTagName('span');
+		
+		document.write("----<br>");
+		
+	 	for(let i=0; i<span.length; i++){
+			spans[i].innerHTML = name;			
+		} 
+		
+	 	//템플릿 문자열
+		let tag = document.getElementById("greeting");
+			tag.innerHTML = hello(name);
+		if(name == "나쁜놈"){
+			tag.style.visibility = "hidden";			
+		}else{
+			tag.style.visibility = "visible";
+		} 
+	
+		
+	</script>
+
+</body>
+</html>

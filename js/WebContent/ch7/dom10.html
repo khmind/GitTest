@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<!-- 
+
+	document객체
+		.location 현재 문서의 url정보를 가진 location document.location=""
+		.domain 서버의 도메일 이름
+		.cookie 
+		.lastModified 마지막 수정시간
+	--------------------------------
+	
+		.title
+		.body
+		.head
+		
+	--------------------------------
+	
+		.images
+		.links
+		.forms		
+	--------------------------------
+	
+		.getElementId('아이디')
+		.getElementsByTagName('태그')		
+		.getElementsByName('name')		
+		.getElementsByClassName('클래스')
+		.querySelector()		- 첫 번째 하나만 가져온다.
+		.qureySelectorAll()		- 해당 하는 모두를 가져온다.
+	--------------------------------
+		.addEventListener()
+		.removeEventListener()
+		.close() : document객체에 있는 HTML콘텐츠를 브라우저에 출력하지 않고 더 이상 쓰기를 받지 않는다.
+		.open() : document객체에 담긴 컨텐츠를 모두 지우고, 새로운 HTML 콘텐츠를 쓸 수 있도록 연다.
+		.createElement()		
+		.write()
+			
+		
+		
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h3 p{
+		cursor: pointer;
+	}
+</style>
+<script type="text/javascript">
+	
+		function change(){
+			
+			/* let spans = doucment.getElementsByClassName('c'); */
+			/* let spans = document.getElementsByTagName('span'); */
+			let spans = document.getElementsByName('n');
+			for(let i=0; i<spans.length; i++){
+				
+				let span = spans[i];
+				span.style.color = "skyblue";
+				span.style.backgroundColor="yellow";
+				span.style.fontSize = "30px";
+				span.style.fontWeight = "bolder";
+			}
+		}
+</script>
+</head>
+<body>
+	<h3> 내가 좋아하는 과일
+		<p type="button" onClick="change()" > 클릭하세요 </p> 	
+	</h3>
+	<hr>
+	저는 빨간 <span class='c' name="n">사과</span>를 좋아해서
+	아침마다 하나씩 먹고 있습니다. 운동 할때 중간 중간에 
+	<span class='c' name="n">바나나</span>를 먹는다. 탄수화물 섭취가 빨라 힘이 난다.
+	또한 달콤한 향기를 품은 <span class='c' name="n">체리</span>와 여름 냄새 물씬 나느 
+	자주를 좋아한다.
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

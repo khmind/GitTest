@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3></h3>
+	<hr>
+	
+	<p>방문 초시간이 짝수이면violet , 홀수이면 lightskyblue</p>
+	<hr>
+	
+	<script type="text/javascript">
+	
+		//날짜 객체를 생성
+		let now = new Date();
+	    let son = now.getSeconds();
+		
+		document.write("현재시간 : " + now.getHours() + "시 " + now.getMinutes() + "분 " + now.getSeconds() + "초 " );		
+		
+		// 조건문으로 비교출력 - 짝수일때와 홀수 일때  
+		// violet  lightskyblue		
+		if ( son%2 == 0){
+			document.body.style.backgroundColor="violet";
+		}else{
+			document.body.style.backgroundColor="lightskyblue";
+		}		
+	
+	</script>	
+	
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 
+
+5. book객체를
+  - 제목, 저자, 가격 3가지 값을 3번 받아서 3객의 객체를 배열에 저장하고
+  저장된 객체의 내역을 모두 출력하고
+  - 그 중에서 가장 비싼 책을 골라서 책의 제목 출력
+  
+  	function Book(title, author, price){
+  	
+  	}
+  
+   let title = prompt();
+   let author = prompt();
+   let price = parseInt(prompt());
+   
+   
+   let book1 = new Book(title, author, price);
+   let book2
+   let book3
+   
+   let bookArr = [book1, book2, book3];
+   let maxPrice = 0;
+   let maxTitle = 0;
+   
+   for(let i=0; i>bookArr.length; i++){
+		document.write(bookArr[i].title);
+   		document.write(bookArr[i].author);
+   		document.write(bookArr[i].price);
+   		
+   		if (bookArr[i].price  > maxPrice  )
+   			maxPrice = bookArr[i].price;
+   			maxTitle = bookArr[i].title;
+   		}   		
+   }
+   
+   document.write(maxTitle + ", "maxPrice );
+   
+   
+   -------------
+   
+   
+   	let maxObj = bookArr[0];
+    for(let i=0; i>bookArr.length; i++){
+    	if (bookArr[i].price  > maxObj.price  ){
+    		maxObj = bookArr[i];
+    	}
+    }
+    document.write(maxObj.title);
+   
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

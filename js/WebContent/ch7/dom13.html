@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- 
+
+	노드 (HTML DOM)조작 활용되는 document 메소드
+	createElement("태그"):태그생성
+	createTextNode("문자열")
+	
+	appendChild("붙임태그"); 마지막 추가
+	removeChild("제거할태그"); 마지막 제거
+	insertBefore(새태그, 기준태그): 기준태그 직전에 추가
+	replaceChild(새태그, 기준태그): 변경
+	
+	hasAttribute(속성명) : 해당 속성이 있다면 true
+	
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+
+	
+
+	function createDIV(){
+		//document.write("test");		
+		
+		//어디에
+		let obj = document.getElementById("parent");		
+		
+		//무엇을
+		let myDiv = document.createElement("div");
+		myDiv.innerHTML = "새로 생성된 DIV입니다."
+		myDiv.setAttribute("id", "myDiv");
+		
+		//스타일은
+		myDiv.style.backgroundColor ="yellow";
+		myDiv.style.fontSize = "20px";
+		myDiv.style.fontWeight = "bolder";
+		
+		//붙여봄
+		obj.appendChild(myDiv);
+		
+		//제거하는 이벤트추가
+		myDiv.addEventListener('click', f);   // addEventListener(type, 함수명만)
+		
+	}
+	
+	function f(){
+		
+		//removeChild("제거할태그"); 마지막 제거
+		let obj = document.getElementById("parent");		
+		obj.removeChild(this);
+		
+	}
+
+/* 	function createImg() {
+		
+		document.write("img");		
+		
+		let obj = document.getElementById("parent");			
+		let myImg = document.createElement("img");
+		
+		myImg.setAttribute("id", "myImg");
+		myImg.style.width = "200px";
+		myImg.style.height = "200px";
+		//myImg.style.display =
+		
+		myImg.src = "../img/puppy1.jpg";
+		
+		obj.appendChild(myImg);
+		
+		
+
+	} */
+	
+</script>
+
+
+</head>
+<body id="parent">
+
+	<!-- <a onClick="createDIV()">DIV생성</a> -->
+	<a href="javascript:createDIV()">DIV생성</a>
+	
+	
+<!-- 	<div id="myDiv" style="background-color: yellow; font-size: 20px; font-weight: bolder">
+	새로 생성된 DIV
+	</div> -->
+	
+<!-- 	<a href="javascript:createImg()">이미지 생성</a> -->
+		<!-- <img src="../img/puppy1.jpg" width="200px" height="200px"> -->
+
+
+</body>
+</html>

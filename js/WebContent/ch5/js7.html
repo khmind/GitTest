@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	document.write("<p>" + Math.random() +"</p>")
+	document.write("<p>" + Math.random()*10 +"</p>") // 1의 자리
+	document.write("<p>" + Math.random()*100 +"</p>") // 10의 자리
+ 	document.write("<p>" + Math.random()*1000 +"  -----</p>") // 100의 자리
+ 	
+ 	//정수화 ceil()올림   floor()내림  round()반올림
+ 	 document.write("<p>" + (Math.floor(Math.random()*100)+1) +"</p>");
+	
+	document.write("<h3>이번주 로또번호</h3>;")
+	
+	for(i=0; i<6; i++){
+		document.write("<p>"+(Math.floor(Math.random()*46)+1)+"</p>");		
+	}
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
